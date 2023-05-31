@@ -370,13 +370,16 @@ img {
 
 .credits{
   text-align: center;
-  font-size: 20px;
+  font-size: 10px;
   color: #d015ff;
-  position: relative;
+  position: absolute;
   bottom: 30px;
   left: 50%;
-  transform: translateX(-50%);
-  top: -1890px;
+  transform: translateX(830%);
+  top: -1790px;
+  
+    writing-mode: vertical-rl;
+  
   
     
   
