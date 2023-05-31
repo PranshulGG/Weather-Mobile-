@@ -78,7 +78,7 @@ img {
 }
 
 .search input {
-  width: 150px;
+  width: 400px;
   height: 40px;
   border: 1px solid #3013c0;
   border-top-left-radius: 5px;
@@ -87,7 +87,7 @@ img {
   font-size: 14px;
   color: #495057;
   position: relative;
-  right: 25px;
+ 
  
 }
 
@@ -108,7 +108,7 @@ img {
   font-size: 14px;
   cursor: pointer;
   position: relative;
-  right: 350px;
+  right: 10px;
   
 }
 
@@ -370,13 +370,13 @@ img {
 
 .credits {
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   color: #0c0404;
   position: absolute;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  top: 30px;
+  top: 100px;
 }
 .Text{
   text-align: center;
