@@ -98,7 +98,7 @@ function getWeatherData(city, unit, hourlyorWeek) {
       }
       currentLocation.innerText = data.resolvedAddress;
       condition.innerText = today.conditions;
-      rain.innerText = "Perc - " + today.precip + "%";
+      rain.innerText = "Percentage - " + today.precip + "%";
       uvIndex.innerText = today.uvindex;
       windSpeed.innerText = today.windspeed;
       measureUvIndex(today.uvindex);
@@ -119,7 +119,7 @@ function getWeatherData(city, unit, hourlyorWeek) {
       sunSet.innerText = covertTimeTo12HourFormat(today.sunset);
     })
     .catch((err) => {
-     
+      
     });
 }
 
