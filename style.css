@@ -9,7 +9,7 @@
 
 
 * {
-  margin: px; 
+  margin: px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -295,7 +295,7 @@ img {
 }
 
 .card2 {
-  width: 30%;
+  width: 50%;
   height: 125px;
   border-radius: 20px;
   color: #0c2ec5;
