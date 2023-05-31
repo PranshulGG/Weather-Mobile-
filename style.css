@@ -1,10 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 :root {
-  --primary-color: rgb(83, 151, 253)
+
+    --primary-color: #73C2FB
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
   
     
-}
+
 
 
 
@@ -81,7 +95,7 @@ img {
 }
 
 .search button {
-  min-width: 40px;
+  min-width: 70px;
   height: 40px;
   border: none;
   border-top-right-radius: 5px;
@@ -193,7 +207,7 @@ img {
 .main {
   width: 100%;
   padding: 20px 40px;
-  background-color: #12b4c0;
+  background-color: #12c095;
   position: relative;
   padding-bottom: 0% ;
 }
@@ -348,4 +362,14 @@ img {
   left: 50%;
   transform: translateX(-50%);
   top: 50px;
+}
+.Text{
+  text-align: center;
+  font-size: 20px;
+  color: #f10888;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2000px;
 }
