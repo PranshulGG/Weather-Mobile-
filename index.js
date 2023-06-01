@@ -167,20 +167,23 @@ function updateForecast(data, unit, type) {
 
 // function to change weather icons
 function getIcon(condition) {
-  if (condition === "partly-cloudy-day") {
-    return "https://i.ibb.co/PZQXH8V/27.png";
-  } else if (condition === "partly-cloudy-night") {
-    return "https://i.ibb.co/Kzkk59k/15.png";
-  } else if (condition === "rain") {
-    return "https://i.ibb.co/kBd2NTS/39.png";
-  } else if (condition === "clear-day") {
-    return "https://i.ibb.co/rb4rrJL/26.png";
-  } else if (condition === "clear-night") {
-    return "https://i.ibb.co/1nxNGHL/10.png";
-  } else {
-    return "https://i.ibb.co/rb4rrJL/26.png";
+    if (condition === "partly-cloudy-day") {
+      return "https://i.ibb.co/PZQXH8V/27.png";
+    } else if (condition === "partly-cloudy-night") {
+      return "https://i.ibb.co/Kzkk59k/15.png";
+    } else if (condition === "rain") {
+      return "https://i.ibb.co/GM1vTSR/39.png";
+    } else if (condition === "clear-day") {
+      return "https://i.ibb.co/rb4rrJL/26.png";
+    } else if (condition === "clear-night") {
+      return "https://i.ibb.co/1nxNGHL/10.png";
+    } else if (condition === "overcast") {
+      return "https://i.ibb.co/kMJv5KS/overcast.png"; // Replace XYZ123 with the actual URL of the overcast icon
+    } else {
+      return "https://i.ibb.co/kMJv5KS/overcast.png";
+    }
   }
-}
+  
 
 // function to change background depending on weather conditions
 function changeBackground(condition) {
@@ -536,9 +539,17 @@ cities = [
     name: "Lucknow",
     lat: "26.846694",
     lng: "80.946166"
+    },
+    {
+    country: "IND",
+    name: "Gaggal",
+    lat: "32.1644",
+    lng: "76.2624"
     }
+
+
+
   
    
 ];
-
 
