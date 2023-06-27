@@ -56,13 +56,14 @@ function display(data, name, customName) {
 
 let tdy=document.getElementById("tdy")
 let tdy_dt=new Date(data.current.dt*1000-(3600*1000))
+
 let yer=tdy_dt.getFullYear()
 let mnt=getmonths(tdy_dt)
 let dte=tdy_dt.getDate()
 let hor=gethours(tdy_dt)
 let minu=getmin(tdy_dt)
 let dy=getDays(tdy_dt)
-tdy.innerHTML=`${dy}&nbsp&nbsp&nbsp${dte}&nbsp${mnt}&nbsp${yer}&nbsp&nbsp&nbsp${hor}:${minu}`
+tdy.innerHTML=`${dy}&nbsp&nbsp&nbsp${dte}&nbsp${mnt}&nbsp${yer}&nbsp&nbsp&nbsp${hor}`
 
 let tmp_logo=data.current.weather[0].icon
 let img=document.createElement("img")
@@ -220,43 +221,45 @@ data.forEach(el => {
 
 //--------------------------------------- functions for get day month hours and minutes--------------------------------------
 function getDays(dates){
-    let arr=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-    return arr[dates.getDay()];
+  let arr=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  return arr[dates.getDay()];
 }
 
 function getmonths(val){
-    let arr=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
-    return arr[val.getMonth()]
+  let arr=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+  return arr[val.getMonth()]
 }
 
 function gethours(val) {
-    let hours = val.getHours();
-    let period = hours >= 12 ? 'PM' : 'AM';
-  
-    if (hours === 0) {
-      hours = 12;
-    } else if (hours > 12) {
-      hours = hours % 12;
-    }
-  
-    return hours;
+  let hours = val.getHours();
+  let minutes = getmin(val);
+  let period = hours >= 12 ? 'PM' : 'AM';
+
+  if (hours === 0) {
+    hours = 12;
+  } else if (hours > 11) {
+    hours = hours % 11;
   }
-  
-  function getmin(val) {
-    let minutes = val.getMinutes();
-  
-    if (minutes < 10) {
-      minutes = '0' + minutes;
-    }
-  
-    return minutes;
+
+  return `${hours}:${getmin(val)} ${period}`;
+}
+
+
+function getmin(val) {
+  let minutes = val.getMinutes();
+
+  if (minutes < 10) {
+    minutes = '0' + minutes;
   }
-  
+
+  return minutes ;
+}
+
 
 function getmin(val){
-    let arr=['00','01','02','03','04','05','06','07','08','09',]
-    for(let i=10; i<60; i++){
-        arr.push(i)
-    }
-    return arr[val.getMinutes()]
+  let arr=['00','01','02','03','04','05','06','07','08','09',]
+  for(let i=10; i<60; i++){
+      arr.push(i)
+  }
+  return arr[val.getMinutes()]
 }
