@@ -85,13 +85,13 @@ let sunrise=document.getElementById("sunrise")
 let sunr=new Date(data.current.sunrise*1000-(3600*1000))
 var sunmin=getmin(sunr)
 var sunhor=gethours(sunr)
-sunrise.innerHTML=`Sunrise ${sunhor}:${sunmin}`
+sunrise.innerHTML=`Sunrise ${sunhor}`
 
 let sunset=document.getElementById("sunset")
 let suns=new Date(data.current.sunset*1000-(3600*1000))
 var sunsmin=getmin(suns)
 var sunshor=gethours(suns)
-sunset.innerHTML=`Sunset ${sunshor}:${sunsmin}`
+sunset.innerHTML=`Sunset ${sunshor}`
 
 let env=document.getElementById("env")
 env.innerHTML=data.current.weather[0].main
