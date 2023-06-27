@@ -187,6 +187,9 @@ input{
 }
 .day{
     font-size: 15px;
+      
+    
+   
 }
 .day_tmp{
     font-size: 12px;
@@ -243,9 +246,10 @@ background-color: blanchedalmond;
 .day{
     color: rgb(255, 0, 0);
     border: 2px solid;
-    width: 50px;
+    width: 80px;
     height: 20px;
     margin-bottom: 5px;
+    
     text-align: center;
     background-color: aliceblue;
     
@@ -268,10 +272,11 @@ background-color: blanchedalmond;
     margin-top: 8px;
     color: red;
     border: 2px solid red ;
-    width:120px;
+    width:140px;
     background-color: rgb(81, 200, 255);
     border-radius: 10px;
     text-align: center;
+    font-size: 15px;
     
 }
 
