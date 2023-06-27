@@ -156,10 +156,10 @@ data.forEach(el => {
       let div2=document.createElement("div")
       div2.setAttribute("class","sun_div")
             let p5=document.createElement("p")
-            p5.innerText=`Sunrise ${sunhor}:${sunmin}`
+            p5.innerText=`Sunrise ${sunhor}`
 
             let p6=document.createElement("p")
-            p6.innerText=`Sunset ${sunshor}:${sunsmin}`
+            p6.innerText=`Sunset ${sunshor}`
             p6.setAttribute("class","sunset")
       div2.append(p5,p6)
 
@@ -190,7 +190,7 @@ data.forEach(el => {
 
       let p1=document.createElement("p")
       p1.setAttribute("class","day")
-      p1.innerText=`${hours}:${min}`
+      p1.innerText=`${hours}`
 
       let tmp=document.createElement("p")
       tmp.innerText=`${el.temp}°`
@@ -241,7 +241,7 @@ function gethours(val) {
     hours = hours % 11;
   }
 
-  return `${hours}:${getmin(val)} ${period}`;
+  return `${hours}:${minutes} ${period}`;
 }
 
 
