@@ -7,7 +7,7 @@ async function getdata(lat, lon) {
   let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=monthaly&appid=374b929e9dbb926db0761ca76e817fc9`;
   try {
     let res = await fetch(url);
-    let data = await res.json();
+    let data = await res.json(); 
 
     let res1 = await fetch(url1);
     let data1 = await res1.json();
