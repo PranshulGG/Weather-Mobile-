@@ -7,7 +7,7 @@
 }
 html,body { 
 background: linear-gradient(rgb(0, 247, 255), rgb(183, 29, 255)); 
-background-repeat: no-repeat;
+background-repeat: no-repeat; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
