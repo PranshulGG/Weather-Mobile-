@@ -14,7 +14,7 @@ background-repeat: no-repeat;
 background-size: cover;
 padding-top: 1px;
 padding-bottom: 1px;
-} 
+}
 
 
 /*------------------ css for parent div ---------------*/
@@ -342,4 +342,19 @@ footer {
     position: relative;
     bottom: 10px;
     right: 8px;
+  }
+
+  .splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('splash.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
   }
