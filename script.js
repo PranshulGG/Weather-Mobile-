@@ -241,3 +241,14 @@ function getmin(val){
   }
   return arr[val.getMinutes()]
 }
+
+const splashDuration = 4000; // 3 seconds
+
+    // Function to hide the splash screen
+    function hideSplashScreen() {
+      const splashScreen = document.querySelector('.splash-screen');
+      splashScreen.style.display = 'none';
+    }
+
+    // Wait for the specified duration and then hide the splash screen
+    setTimeout(hideSplashScreen, splashDuration);
