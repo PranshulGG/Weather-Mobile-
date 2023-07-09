@@ -1,0 +1,346 @@
+/* ------------------ global css --------------------*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+html,body { 
+background: linear-gradient(rgb(0, 247, 255), rgb(183, 29, 255)); 
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+padding-top: 1px;
+padding-bottom: 1px;
+}
+
+
+/*------------------ css for parent div ---------------*/
+.parent{
+    width: 90%;
+    margin: auto;
+}
+
+h4{
+    color: rgb(0, 0, 0);
+    border: 4px solid red;
+    display: inline-block;
+    width: 110px;
+    background-color: aliceblue;
+    font-family: 'Monomaniac One';
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+/*------------------- css for search div -----------------*/
+.search_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#search{
+    width: 220px;
+    height: 35px;
+    color: black;
+    
+    border: 1px solid white;
+    border-radius: 20px;
+
+}
+input{
+    padding:2px 10px;
+    font-family: 'Teko';
+   font-size: 18px;
+}
+#btn{
+    background-color: rgb(241, 152, 36);
+    border: none;
+    width: 60px;
+    border-radius: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+/*--------------------- css for main div ----------------*/
+.main{
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+#dew{
+    font-size: 0px;
+}
+
+/*-------------------- css for main0 div ---------------------*/
+.main0{
+    padding: 10px;
+}
+.city{
+    font-size: 40px;
+    font-family: 'Gasoek One';
+    color: rgb(255, 5, 5);
+    border: 2px solid rgb(174, 0, 255);
+
+}
+.temp{
+    
+    display: flex;
+    width: 300px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+    position: relative;
+    bottom:  60px;
+    right: 20px;
+  color: rgb(25, 0, 255);
+  font-weight: bold;
+  
+}
+#tmp_logo>img{
+    max-width: 80px;
+    position: relative;
+    left: 20px;
+    top:  60px;
+    
+    
+    
+}
+#temp{
+    margin-top: 18px;
+}
+.env{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Audiowide';
+    font-weight: bold;
+    border: 2px solid;
+    background: linear-gradient(to right, rgb(255, 251, 0) , rgb(116, 224, 206));
+
+  
+
+}
+
+
+/*----------------------- css for main1 div --------------------*/
+.main1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* font-size: 14px; */
+    
+    
+}
+#sunrise{
+    font-family: 'Creepster';
+    border: 1px solid;
+    font-size: 20px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+#sunset{
+    font-family: 'Creepster';
+    border: 1px solid;
+    font-size: 20px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+.visi{
+    margin-left: 20px;
+}
+
+
+/*------------------------ css for main2 div -------------------*/
+.main2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+}
+.dew{
+    margin-left: 20px;
+}
+
+
+/*----------------------- css for hour data --------------------*/
+.we_data{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.hours_data{
+    display: flex;
+    overflow:auto;
+    gap: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+.day_card{
+    padding: 8px;
+    border: 1px solid rgb(210, 207, 207);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.day{
+    font-size: 15px;
+      
+    
+   
+}
+.day_tmp{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.weth_logo{
+    width: 80px;
+    background-color: rgb(127, 179, 166);
+    border: 0.2px solid red;
+    display: inline-block;
+    border-radius: 200px
+   
+}
+.hour_weth{
+    font-size: 14px;
+    color: red;
+    border: 1px solid;
+    width: 80px;
+    text-align: center;
+    height: 15px;
+    background-color: rgb(102, 255, 0);
+    border-radius: 10px;
+    font-style: italic;
+}
+.wind{
+    font-size: 8px;
+    border: 1px solid;
+    width: 65px;
+    text-align: center;
+    color: red;
+    background-color:rgb(102, 255, 0); 
+    font-weight: bold;
+    border-radius: 4px;
+}
+#hum{
+    border: 2px solid rgb(0, 255, 0);
+    font-family: 'Nova Cut';
+    font-weight: bold;
+    font-style: italic;
+    width: 160px;
+    font-size: 20px;
+    border-radius: 10px;
+color: red;
+background-color: blanchedalmond;
+
+}
+
+/*-----------------------  css for week data ------------------------*/
+.week_div{
+    margin-top: 20px;
+    margin-bottom: 50px;
+   
+}
+.day{
+    color: rgb(255, 0, 0);
+    border: 2px solid;
+    width: 80px;
+    height: 20px;
+    margin-bottom: 5px;
+    
+    text-align: center;
+    background-color: aliceblue;
+    
+    font-family:'Gasoek One' ;
+}
+
+.days_data{
+    display: flex;
+    overflow:auto;
+    gap: 10px;
+    margin: auto;
+    margin-top: 10px;  
+    
+}
+.tmp_div{
+    display: flex;
+}
+.sun_div{
+    display: flex;
+    margin-top: 8px;
+    color: red;
+    border: 2px solid red ;
+    width:140px;
+    background-color: rgb(81, 200, 255);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+
+.sunset{
+    margin-left: 10px;
+    
+
+}
+
+.min_temp{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.max_temp{
+    font-size: 17px;
+    color: rgb(200, 255, 0);
+    font-weight: bold;
+}
+.weth{
+    font-size: 15px;
+    margin-top: 5px;
+    border: 1px solid;
+    width: 40px;
+    text-align: center;
+    background: linear-gradient(to right ,rgb(102, 255, 0) , rgb(0, 162, 255));
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
+#today{
+    margin-top: 10px;
+}
+#tdy{
+    margin-top: 10px;
+}
+footer {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    font-weight: bold;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  .go{
+    position: relative;
+    bottom: 10px;
+    right: 8px;
+  }
+
